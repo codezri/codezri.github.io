@@ -1942,7 +1942,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #f32853;
+			background-color: #ef7421;
 			color: #ffffff !important;
 		}
 
@@ -1951,7 +1951,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #f44066;
+				background-color: #ef7421;
 			}
 
 			input[type="submit"].special:active,
@@ -2562,7 +2562,7 @@
 		color: #aaa;
 		position: relative;
 		margin: 0 0 1.5em 0;
-		text-transform: uppercase;
+		text-transform: capitalize;
 	}
 
 	header h2 + p {
@@ -3089,7 +3089,7 @@
 	}
 
 	#banner {
-		padding: 16em 0 13em 0;
+		padding: 10em 0 5em 0;
 		background-attachment: fixed;
 		background-image: url("images/overlay.png"), url("../../images/bg_image.jpg");
 		background-position: center top;
@@ -3114,7 +3114,7 @@
 			color: #aaa;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
-			text-transform: uppercase;
+			text-transform: capitalize;
 		}
 
 		@media screen and (max-width: 1280px) {
