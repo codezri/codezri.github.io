@@ -18,7 +18,7 @@ function ProfileHeader() {
           <Link
             className="button button--secondary button--lg"
             href="https://www.linkedin.com/in/shalithasuranga/">
-            Find me on LinkedIn
+            LinkedIn
           </Link>
           <Link
             className="button button--secondary button--lg margin-left--sm"

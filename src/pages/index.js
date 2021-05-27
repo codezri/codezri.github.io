@@ -19,12 +19,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/projects">
-            Browse Projects
+             Projects
           </Link>
           <Link
             className="button button--secondary button--lg margin-left--sm"
             href="https://forms.gle/mTxB9gdKsdWPkwBQA">
-            Hello CodeZri
+            Say Hello
           </Link>
         </div>
       </div>
