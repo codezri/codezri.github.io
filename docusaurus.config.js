@@ -1,21 +1,17 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'CodeZri',
-  tagline: 'Open-source innovations for everyone',
+  tagline: 'Open-source tools and content for developers',
   url: 'https://codezri.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.jpg',
   organizationName: 'codezri',
   projectName: 'codezri.github.io',
   themeConfig: {
     navbar: {
       title: 'CodeZri',
-      logo: {
-        alt: 'CodeZri Logo',
-        src: 'img/logo.svg',
-      },
       items: [
         {
           to: 'projects',
@@ -73,24 +69,12 @@ module.exports = {
           items: [
             {
               label: 'YouTube',
-              href: '#',
+              href: 'https://www.youtube.com/c/CodeZri',
             },
             {
               label: 'LinkedIn',
-              href: '#',
-            },
-            {
-              label: 'Twitter',
-              href: '#',
-            },
-            {
-              label: 'Facebook',
-              href: '#',
-            },
-            {
-              label: 'Instagram',
-              href: '#',
-            },
+              href: 'https://www.linkedin.com/company/codezri',
+            }
           ],
         },
         {
@@ -98,12 +82,12 @@ module.exports = {
           items: [
             {
               label: 'Contact CodeZri',
-              href: '#',
+              href: 'https://forms.gle/mTxB9gdKsdWPkwBQA',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} CodeZri.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CodeZri.org`,
     },
   },
   presets: [

@@ -5,27 +5,27 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Open Source Software',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/undraw_open_source_1qxw.svg').default,
     description: (
       <>
-        CodeZri turns innovative ideas to open source products. Our goal is to make open source to make 
-        every developer's life easier. Neutralinojs and Jerverless are popular innovations.
+        CodeZri turns innovative ideas to open source products. Our goal is to make open source tools to make 
+        every developer's life easier. Neutralinojs and Jerverless are our popular innovations.
       </>
     ),
   },
   {
     title: 'Articles For Developers',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/undraw_online_reading_np7n.svg').default,
     description: (
       <>
         CodeZri often publish articles about computer science, programming, and technology. Follow us on social media
-        for latest articles.
+        for latest technical articles and news.
       </>
     ),
   },
   {
     title: 'Tutorials For Developers',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/undraw_youtube_tutorial_2gn3.svg').default,
     description: (
       <>
         CodeZri loves to share knowledge with the developer community. Follow us on YouTube for latest videos about 
