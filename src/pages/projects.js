@@ -22,8 +22,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} Open Source Projects`}
-      description="CodeZri built popular free and open-source products including Neutralinojs and Jerverless.">
+      title={`${siteConfig.title} Projects`}
+      description="CodeZri built popular free and open-source products including Neutralinojs and Jerverless. See all CodeZri projects.">
       <ProjectsHeader />
       <main>
         <Projects />

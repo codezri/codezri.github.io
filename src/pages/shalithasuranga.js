@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './shalithasuranga.module.css';
 
-function HomepageHeader() {
+function ProfileHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -31,7 +31,7 @@ function HomepageHeader() {
   );
 }
 
-function HomePageIntro() {
+function ProfileIntro() {
   return (
      <div className={styles.intro}>
       <div className="container">
@@ -116,7 +116,7 @@ function HomePageIntro() {
               </li>
               
               
-              <hr/>
+              <br/>
               
               Checkout my <Link href="https://docs.google.com/document/d/1RAjX8A5GqD-gGy0oKf-AktngxPZB6GK4Y7DnoQgbYUs/edit?usp=sharing">resume</Link> if 
               you would like to know more about me.
@@ -133,12 +133,12 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.tagline}`}
-      description="CodeZri (a non-profit organization) is making open-source products and 
-      high-quality content for developers around the world">
-      <HomepageHeader />
+      title={`Shalitha Suranga`}
+      description="Shalitha Suranga is a programmer and technical writer. He founded CodeZri 
+                    non-profit organization to develop tools for developers.">
+      <ProfileHeader />
       <main>
-          <HomePageIntro />
+          <ProfileIntro />
       </main>
     </Layout>
   );
