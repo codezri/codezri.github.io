@@ -10,6 +10,10 @@ module.exports = {
   organizationName: 'codezri',
   projectName: 'codezri.github.io',
   themeConfig: {
+    gtag: {
+      trackingID: 'UA-160712034-1',
+      anonymizeIP: true,
+    },
     navbar: {
       title: 'CodeZri',
       items: [
