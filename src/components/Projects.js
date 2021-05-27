@@ -6,7 +6,7 @@ import styles from './Projects.module.css';
 const ProjectsList = [
   {
     title: 'Neutralinojs',
-    image: '../../static/img/projects/neutralinojs.png',
+    image: 'img/projects/neutralinojs.png',
     description: (
       <>
         Neutralino is a lightweight and portable desktop application development framework.
@@ -17,7 +17,7 @@ const ProjectsList = [
   },
   {
     title: 'Jerverless',
-    image: '../../static/img/projects/jerverless.png',
+    image: 'img/projects/jerverless.png',
     description: (
       <>
         Jerverless is a serverless runner which will execute anything (binaries, commands or your scripts) as a serverless function. 
@@ -28,7 +28,7 @@ const ProjectsList = [
   },
   {
     title: 'GoogleZri',
-    image: '../../static/img/projects/script.png',
+    image: 'img/projects/script.png',
     description: (
       <>
         A Python script which will open Google search with CTRL + F2 for a selected text from anywhere.
@@ -38,7 +38,7 @@ const ProjectsList = [
   },
   {
     title: 'MovieZri',
-    image: '../../static/img/projects/moviezri.png',
+    image: 'img/projects/moviezri.png',
     description: (
       <>
         Find a movie to watch today based of what you feel right now. Very simple but very interactive 
@@ -49,7 +49,7 @@ const ProjectsList = [
   },
   {
     title: 'LAMGSTACK',
-    image: '../../static/img/projects/concept.png',
+    image: 'img/projects/concept.png',
     description: (
       <>
         World's cheapest but modern stack for lightweight web apps. LAMG (stands for Lambda Angular Mongodb Github)
@@ -61,7 +61,7 @@ const ProjectsList = [
   },
   {
     title: 'FactsOverflow',
-    image: '../../static/img/projects/factsoverflow.png',
+    image: 'img/projects/factsoverflow.png',
     description: (
       <>
         FactsOverflow (also known as FO) is an educational non-commercial blog that publishes stories mostly about computer 
