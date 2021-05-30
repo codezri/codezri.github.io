@@ -78,6 +78,14 @@ module.exports = {
             {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/company/codezri',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://www.twitter.com/codezri',
+            },
+            {
+              label: 'Facebook',
+              href: 'https://www.fb.com/codezri',
             }
           ],
         },
