@@ -75,11 +75,10 @@ const ProjectsList = [
 ];
 
 function Project({project}) {
-  const imgPath = useBaseUrl('/img/projects/');
   return (
     <div className={clsx('col col--4', styles.project, 'padding-vert--md')}>
       <div className="text--center">
-        <img src={imgPath + project.image} alt={project.title} />
+        <img src={useBaseUrl('/img/projects/' + project.image)} alt={project.title} />
       </div>
       <div className="text--center padding-horiz--md padding-vert--sm">
         <h3>{project.title}</h3>

@@ -24,11 +24,10 @@ const DonatorsList = ['Just Epic',
         'Mortarwork Studios'];
 
 function Sponsor({sponsor}) {
-  const imgPath = useBaseUrl('/img/sponsors/');
   return (
     <div className={clsx('col col--4', styles.sponsor, 'padding-vert--md')}>
       <div className="text--center">
-        <img src={imgPath + sponsor.image} alt={sponsor.name} />
+        <img src={useBaseUrl('/img/sponsors/' + sponsor.image)} alt={sponsor.name} />
       </div>
       <div className="text--center padding-horiz--md padding-vert--sm">
         <h3>{sponsor.name}</h3>
