@@ -1,12 +1,13 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './Sponsors.module.css';
 
 const ProjectsList = [
   {
     name: 'MacStadium',
-    image: 'img/sponsors/macstadium.png',
+    image: 'macstadium.png',
     description: (
       <>
       MacStadium is the only provider of enterprise-class cloud solutions for Mac and iOS app development.
@@ -23,10 +24,11 @@ const DonatorsList = ['Just Epic',
         'Mortarwork Studios'];
 
 function Sponsor({sponsor}) {
+  const imgPath = useBaseUrl('/img/sponsors/');
   return (
     <div className={clsx('col col--4', styles.sponsor, 'padding-vert--md')}>
       <div className="text--center">
-        <img src={sponsor.image} alt={sponsor.name} />
+        <img src={imgPath + sponsor.image} alt={sponsor.name} />
       </div>
       <div className="text--center padding-horiz--md padding-vert--sm">
         <h3>{sponsor.name}</h3>

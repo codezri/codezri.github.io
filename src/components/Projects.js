@@ -1,12 +1,13 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './Projects.module.css';
 
 const ProjectsList = [
   {
     title: 'Neutralinojs',
-    image: 'img/projects/neutralinojs.png',
+    image: 'neutralinojs.png',
     description: (
       <>
         Neutralino is a lightweight and portable desktop application development framework.
@@ -17,7 +18,7 @@ const ProjectsList = [
   },
   {
     title: 'Jerverless',
-    image: 'img/projects/jerverless.png',
+    image: 'jerverless.png',
     description: (
       <>
         Jerverless is a serverless runner which will execute anything (binaries, commands or your scripts) as a serverless function. 
@@ -28,7 +29,7 @@ const ProjectsList = [
   },
   {
     title: 'GoogleZri',
-    image: 'img/projects/script.png',
+    image: 'script.png',
     description: (
       <>
         A Python script which will open Google search with CTRL + F2 for a selected text from anywhere.
@@ -38,7 +39,7 @@ const ProjectsList = [
   },
   {
     title: 'MovieZri',
-    image: 'img/projects/moviezri.png',
+    image: 'moviezri.png',
     description: (
       <>
         Find a movie to watch today based of what you feel right now. Very simple but very interactive 
@@ -49,7 +50,7 @@ const ProjectsList = [
   },
   {
     title: 'LAMGSTACK',
-    image: 'img/projects/concept.png',
+    image: 'concept.png',
     description: (
       <>
         World's cheapest but modern stack for lightweight web apps. LAMG (stands for Lambda Angular Mongodb Github)
@@ -61,7 +62,7 @@ const ProjectsList = [
   },
   {
     title: 'FactsOverflow',
-    image: 'img/projects/factsoverflow.png',
+    image: 'factsoverflow.png',
     description: (
       <>
         FactsOverflow (also known as FO) is an educational non-commercial blog that publishes stories mostly about computer 
@@ -74,10 +75,11 @@ const ProjectsList = [
 ];
 
 function Project({project}) {
+  const imgPath = useBaseUrl('/img/projects/');
   return (
     <div className={clsx('col col--4', styles.project, 'padding-vert--md')}>
       <div className="text--center">
-        <img src={project.image} alt={project.title} />
+        <img src={imgPath + project.image} alt={project.title} />
       </div>
       <div className="text--center padding-horiz--md padding-vert--sm">
         <h3>{project.title}</h3>
