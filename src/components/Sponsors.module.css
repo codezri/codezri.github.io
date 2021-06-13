@@ -1,0 +1,15 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.sponsors img {
+  height: 200px;
+  width: 200px;
+  border: solid 0.5em rgba(144, 144, 144, 0.25);
+  border-radius: 100%;
+}

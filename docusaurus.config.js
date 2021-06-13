@@ -33,6 +33,11 @@ module.exports = {
           label: 'Shalitha Suranga',
         },
         {
+          to: 'sponsors',
+          position: 'left',
+          label: 'Sponsors',
+        },
+        {
           href: 'https://github.com/codezri',
           label: 'GitHub',
           position: 'right',
