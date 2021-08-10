@@ -21,7 +21,8 @@ const ProjectsList = [
 const DonatorsList = ['Just Epic',
         'Brian McGonagill',
         'Brian',
-        'Mortarwork Studios'];
+        'Mortarwork Studios',
+        'Louis Couture'];
 
 function Sponsor({sponsor}) {
   return (
