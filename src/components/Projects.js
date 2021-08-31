@@ -72,6 +72,18 @@ const ProjectsList = [
     ),
     link: 'https://factsoverflow.com/'
   },
+  {
+    title: 'react-native-ecommerce',
+    image: 'script.png',
+    description: (
+      <>
+      A minimal React Native e-commerce app template. It has a products list, details page, 
+      and shopping cart summary page.
+      Easy-to-extend state management is done with React Context API.
+      </>
+    ),
+    link: 'https://github.com/codezri/react-native-ecommerce'
+  },
 ];
 
 function Project({project}) {
