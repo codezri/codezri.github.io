@@ -28,11 +28,6 @@ module.exports = {
           label: 'YouTube',
         },
         {
-          to: 'shalithasuranga',
-          position: 'left',
-          label: 'Shalitha Suranga',
-        },
-        {
           to: 'sponsors',
           position: 'left',
           label: 'Sponsors',
@@ -100,6 +95,10 @@ module.exports = {
             {
               label: 'Contact CodeZri',
               href: 'https://forms.gle/mTxB9gdKsdWPkwBQA',
+            },
+            {
+              label: 'Privacy policy',
+              to: 'privacy-policy',
             },
           ],
         },

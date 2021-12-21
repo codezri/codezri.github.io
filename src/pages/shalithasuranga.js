@@ -13,7 +13,7 @@ function ProfileHeader() {
         <h1 className="hero__title">
           Shalitha Suranga
         </h1>
-        <p className="hero__subtitle">Programmer | Technical Writer | Apache PMC member</p>
+        <p className="hero__subtitle">Programmer & Technical Writer</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -41,29 +41,17 @@ function ProfileIntro() {
           </div>
           <div className="col col--9">
             <p>
-              I wrote <code>hello world</code> when I was 13 years old. I like to work with computer science related things. I started CodeZri
-              to develop open-source tools for developers around the world. I write technical content for developers in Medium and LogRocket blog.
-              
+              I wrote "hello world" when I was thirteen years old.
+              I like to work with computer science related stuff. I started CodeZri
+              to build open-source tools and write high-quality technical content for developers around the world.
+
               <br/><br/>
-              Find me on, 
+              Find me on,
               <br/><br/>
-              
               <li>
                 <Link
-                  href="https://www.linkedin.com/in/shalithasuranga">
-                  LinkedIn
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://www.facebook.com/shalithasuranga">
-                  Facebook
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://www.twitter.com/ShalithaSuranga">
-                  Twitter
+                  href="https://github.com/shalithasuranga">
+                  Github
                 </Link>
               </li>
               <li>
@@ -74,14 +62,26 @@ function ProfileIntro() {
               </li>
               <li>
                 <Link
-                  href="https://github.com/shalithasuranga">
-                  Github
+                  href="https://blog.logrocket.com/author/shalithasuranga">
+                  LogRocket
                 </Link>
               </li>
               <li>
                 <Link
                   href="http://people.apache.org/phonebook.html?uid=shalithasuranga">
                   Apache
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.linkedin.com/in/shalithasuranga">
+                  LinkedIn
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.twitter.com/ShalithaSuranga">
+                  Twitter
                 </Link>
               </li>
               <li>
@@ -104,23 +104,14 @@ function ProfileIntro() {
               </li>
               <li>
                 <Link
-                  href="https://blog.logrocket.com/author/shalithasuranga">
-                  LogRocket
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="https://www.patreon.com/shalithasuranga">
                   Patreon
                 </Link>
               </li>
-              
-              
               <br/>
-              
-              Checkout my <Link href="https://docs.google.com/document/d/1RAjX8A5GqD-gGy0oKf-AktngxPZB6GK4Y7DnoQgbYUs/edit?usp=sharing">resume</Link> if 
-              you would like to know more about me.
-              Still curious? Click <Link href="https://www.google.com/search?q=Shalitha+Suranga">here!</Link>
+
+              If you would like to know more about me,
+              click <Link href="https://www.google.com/search?q=Shalitha+Suranga">here!</Link>
             </p>
           </div>
         </div>
@@ -134,7 +125,7 @@ export default function Home() {
   return (
     <Layout
       title={`Shalitha Suranga`}
-      description="Shalitha Suranga is a programmer and technical writer. He founded CodeZri 
+      description="Shalitha Suranga is a programmer and technical writer. He founded CodeZri
                     non-profit organization to develop tools for developers.">
       <ProfileHeader />
       <main>
