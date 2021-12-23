@@ -1,7 +1,7 @@
 ---
 title: ReleaseZri
 ---
-A meaningful and minimalist release notes for developers
+Meaningful and minimalist release notes for developers
 
 Managing manual release notes is hard. Therefore, everyone tends to generate release notes
 from commit messages. But, you won't get a meaningful release note at the end. ReleaseZri offers
