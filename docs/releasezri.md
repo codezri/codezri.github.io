@@ -6,19 +6,20 @@ Meaningful and minimalist release notes for developers
 Managing manual release notes is hard. Therefore, everyone tends to generate release notes
 from commit messages. But, you won't get a meaningful release note at the end. ReleaseZri offers
 you a simple strategy to maintain a human-friendly changelog and generate release notes automatically.
-It also gives you a GitHub Action template that you can simply copy-paste into your projects.
+It also gives you a GitHub Action workflow steps that you can simply copy-paste into your projects.
 
 [Source code](https://github.com/codezri/releasezri)
 
 ## Highlighted features
 
 - Generate release notes and update changelog with one command.
-- You don't need to follow specific commit convension rules.
+- You don't need to follow a specific commit message format.
 - Structure your changelog with a simple format, write content with your own rules.
 - Get release notes as a markdown file, use whereever you need.
 - Flexible release note template.
-- Written in Python, run on any platform.
+- Written in Python, works on any platform.
 
+[Neutralinojs](https://neutralino.js.org) uses ReleaseZri to maintain their release notes.
 Add ReleaseZri to your project with the following steps.
 
 ## Create a changelog
@@ -45,7 +46,7 @@ under the `Unreleased` topic to track changes for the next release.
 ```
 
 There are no strict rules. You only need to use `## Unreleased` for unreleased changes and
-level 3 (`###`) or below headings for changes. You can update this changelog whenever you need regardless of
+level 3 (`###`) or below headings for changes. You can update this changelog manually whenever you need regardless of
 what you commit.
 
 ## Create a release note template
@@ -54,15 +55,15 @@ ReleaseZri generates release notes and embeds to a template. Now add your templa
 , as shown below.
 
 ```
-## What's new in {RZ_VERSION}
+## What's new
 {RZ_CHANGELOG}
-Get started: https://codezri.org/docs/releasezri
+Get started with {RZ_VERSION}: https://codezri.org/docs/releasezri
 ```
 
 ### Supported template variables
 
-- `RZ_VERSION`: New version.
-- `RZ_CHANGELOG`: Generated release notes.
+- `RZ_VERSION`: New version, Eg: `v3.2.0`.
+- `RZ_CHANGELOG`: Generated release notes markdown. Release notes is extracted from your `CHANGELOG.md`.
 
 ## Add the release note generation script
 
@@ -70,12 +71,12 @@ Copy-paste [`scripts/rz.py`](https://github.com/codezri/releasezri/blob/main/scr
 
 ## Update your DevOps workflow
 
-When you run `rz.py create <version>`, it will generate release notes to `.tmprz/release_notes.md`. Also, it will update
-`CHANGELOG.md` by adding the new version. You can run `rz.py cleanup` to remove the `.tmprz` directory after
-using the generated release note.
+When you run `rz.py create <version>`, it will generate release notes to `.tmprz/release_notes.md`. Also,
+it will update `CHANGELOG.md` by adding the new version. You can run `rz.py cleanup` to remove
+the `.tmprz` directory after using the generated release note.
 
 You can use this release note generation script locally or with any DevOps pipleline. For example, see how to
-integrate with GitHub Actions.
+integrate ReleaseZri with GitHub Actions.
 
 Add a workflow step to create release notes.
 
@@ -86,7 +87,7 @@ Add a workflow step to create release notes.
     ./scripts/rz.py create ${{github.event.inputs.version}}
 ```
 
-Add another step to commit changelog's updates.
+Add another step to commit and push changelog's updates.
 
 ```yaml
 - name: Commit and Push Changelog
@@ -98,7 +99,7 @@ Add another step to commit changelog's updates.
     tag: v${{github.event.inputs.version}}
 ```
 
-Finally, publish your release with notes.
+Finally, publish your release with notes and artifacts.
 
 ```yaml
 - name: Create a GitHub release
@@ -112,4 +113,6 @@ Finally, publish your release with notes.
 ```
 
 See a complete workflow
-[here](https://github.com/neutralinojs/neutralinojs/blob/main/.github/workflows/create_release.yml)
+[here](https://github.com/neutralinojs/neutralinojs/blob/main/.github/workflows/create_release.yml).
+The ReleaseZri project itself maintains release notes with ReleaseZri.
+See its workflow [here](https://github.com/codezri/releasezri/blob/main/.github/workflows/create-release.yml).
