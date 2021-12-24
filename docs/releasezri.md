@@ -6,7 +6,7 @@ Meaningful and minimalist release notes for developers
 Managing manual release notes is hard. Therefore, everyone tends to generate release notes
 from commit messages. But, you won't get a meaningful release note at the end. ReleaseZri offers
 you a simple strategy to maintain a human-friendly changelog and generate release notes automatically.
-It also gives you a GitHub Action workflow steps that you can simply copy-paste into your projects.
+It also gives you GitHub Action workflow steps that you can simply copy-paste into your projects.
 
 [Source code](https://github.com/codezri/releasezri)
 
