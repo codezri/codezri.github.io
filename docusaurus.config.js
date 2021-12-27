@@ -28,6 +28,11 @@ module.exports = {
           label: 'Projects',
         },
         {
+          to: 'blog',
+          position: 'left',
+          label: 'Blog',
+        },
+        {
           href: 'https://www.youtube.com/c/CodeZri',
           position: 'left',
           label: 'YouTube',
@@ -122,6 +127,11 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        blog: {
+          blogTitle: 'CodeZri blog!',
+          blogDescription: 'The official blog of CodeZri.org',
+          postsPerPage: 10,
         },
       },
     ],
