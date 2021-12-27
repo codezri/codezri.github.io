@@ -1,0 +1,1 @@
+(self.webpackChunkcodezri=self.webpackChunkcodezri||[]).push([[14],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Neutralinojs 2022 Roadmap","permalink":"/blog/neutralinojs-2022-roadmap"}]}')}}]);

@@ -2,9 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codezri.org/blog</id>
     <title>CodeZri Blog</title>
-    <updated>2015-10-25T23:29:00.000Z</updated>
+    <updated>2021-12-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codezri.org/blog"/>
     <subtitle>CodeZri Blog</subtitle>
     <icon>https://codezri.org/img/favicon.jpg</icon>
+    <entry>
+        <title type="html"><![CDATA[Neutralinojs 2022 Roadmap]]></title>
+        <id>neutralinojs-2022-roadmap</id>
+        <link href="https://codezri.org/blog/neutralinojs-2022-roadmap"/>
+        <updated>2021-12-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Every year, we typically publish a high-level view of planned milestones.]]></summary>
+    </entry>
 </feed>

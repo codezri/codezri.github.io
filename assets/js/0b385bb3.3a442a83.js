@@ -1,0 +1,1 @@
+(self.webpackChunkcodezri=self.webpackChunkcodezri||[]).push([[613],{7877:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"neutralinojs","name":"neutralinojs","count":1,"permalink":"/blog/tags/neutralinojs"}')}}]);

@@ -1,0 +1,1 @@
+(self.webpackChunkcodezri=self.webpackChunkcodezri||[]).push([[516],{4176:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"framework","name":"framework","count":1,"permalink":"/blog/tags/framework"}')}}]);
