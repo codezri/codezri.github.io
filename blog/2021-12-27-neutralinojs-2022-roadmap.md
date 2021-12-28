@@ -91,7 +91,7 @@ Check 2022 roadmap repo and suggest ideas: https://github.com/neutralinojs/roadm
 You may think why we are building another JavaScript framework. Electron dominates the desktop
 application development industry. Even big tech companies tend to use Electron to build their desktop
 apps. The Electron framework is a great tool for building **large-scale** desktop apps for **high-end**
-computers. However, there is a problem if a simple desktop app takes hundreds of disk space and consumes
+computers. However, there is a problem if a simple desktop app takes hundred megabytes of disk space and consumes
 above-average resources. Moreover, there is a problem if your app performs poorly on low-end or mid-end
 computers.
 
