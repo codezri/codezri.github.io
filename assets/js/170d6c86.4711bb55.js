@@ -1,1 +1,0 @@
-(self.webpackChunkcodezri=self.webpackChunkcodezri||[]).push([[839],{3957:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"roadmap","name":"roadmap","count":1,"permalink":"/blog/tags/roadmap"}')}}]);
