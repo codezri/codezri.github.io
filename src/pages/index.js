@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -8,13 +8,34 @@ import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const [isInitialized, setIsInitialized] = useState(false);
+  const [isEthABlocked, setIsEthABlocked] = useState(false)
+  useEffect(() => {
+    if(isInitialized) {
+      return;
+    }
+    setIsInitialized(true);
+    try {
+      setIsEthABlocked(typeof ethicalads === 'undefined');
+      ethicalads.load_placements();
+    }
+    catch (error) {
+      setIsEthABlocked(false);
+    }
+  });
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">
-          <img src="img/codezri_white.png" alt={siteConfig.title} className={styles.logo}/>
-        </h1>
+        <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div>
+            <div
+                data-ea-publisher="neutralino"
+                data-ea-type="image"
+                id="codezri-front"
+                >
+            </div>
+        </div>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"

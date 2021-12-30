@@ -1,3 +1,5 @@
+const path = require('path');
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'CodeZri',
@@ -16,6 +18,10 @@ module.exports = {
     },
     navbar: {
       title: 'CodeZri',
+      logo: {
+        alt: 'CodeZri logo',
+        src: 'img/codezri_white.png',
+      },
       items: [
         {
           to: 'docs',
@@ -129,11 +135,14 @@ module.exports = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         blog: {
-          blogTitle: 'CodeZri blog!',
+          blogTitle: 'CodeZri blog',
           blogDescription: 'The official blog of CodeZri.org',
           postsPerPage: 10,
         },
       },
     ],
   ],
+  plugins: [
+    path.resolve('./plugins/load-external-assets')
+  ]
 };

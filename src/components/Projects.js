@@ -21,13 +21,24 @@ const ProjectsList = [
     image: 'jerverless.png',
     description: (
       <>
-        Jerverless is a serverless runner which will execute anything (binaries, commands or your scripts) as a serverless function. 
+        Jerverless is a serverless runner which will execute anything (binaries, commands or your scripts) as a serverless function.
         It simply pipes http POST data into STDIN of any executable vice versa.
       </>
     ),
     link: 'https://jerverless.github.io'
   },
   {
+    title: 'ReleaseZri',
+    image: 'script.png',
+    description: (
+      <>
+        Meaningful and minimalist release notes for developers. Automate your releases with meaningful
+        release notes with a simple changelog format. Used by Neutralinojs and many.
+      </>
+    ),
+    link: 'https://github.com/codezri/releasezri'
+  },
+   {
     title: 'GoogleZri',
     image: 'script.png',
     description: (
@@ -42,7 +53,7 @@ const ProjectsList = [
     image: 'moviezri.png',
     description: (
       <>
-        Find a movie to watch today based of what you feel right now. Very simple but very interactive 
+        Find a movie to watch today based of what you feel right now. Very simple but very interactive
         online movie recommendation system. No signup needed!
       </>
     ),
@@ -54,7 +65,7 @@ const ProjectsList = [
     description: (
       <>
         World's cheapest but modern stack for lightweight web apps. LAMG (stands for Lambda Angular Mongodb Github)
-         is a full-stack solution which helps you develop or prototype lightweight, 
+         is a full-stack solution which helps you develop or prototype lightweight,
          maintainable and less-complex web applications.
       </>
     ),
@@ -65,8 +76,8 @@ const ProjectsList = [
     image: 'factsoverflow.png',
     description: (
       <>
-        FactsOverflow (also known as FO) is an educational non-commercial blog that publishes stories mostly about computer 
-        science and programming. This website contains articles written by volunteers who need to show their findings, 
+        FactsOverflow (also known as FO) is an educational non-commercial blog that publishes stories mostly about computer
+        science and programming. This website contains articles written by volunteers who need to show their findings,
         experiments, and open-source-related activities to the right community.
       </>
     ),
@@ -77,7 +88,7 @@ const ProjectsList = [
     image: 'script.png',
     description: (
       <>
-      A minimal React Native e-commerce app template. It has a products list, details page, 
+      A minimal React Native e-commerce app template. It has a products list, details page,
       and shopping cart summary page.
       Easy-to-extend state management is done with React Context API.
       </>
