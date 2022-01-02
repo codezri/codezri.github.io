@@ -5,22 +5,27 @@ on:
     branches: [ master ]
 
 jobs:
-  build-and-deploy:
+  deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-   
-    - name: Use Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16.x
-        cache: yarn
-        
-    - name: Setup GIT user
-      uses: fregante/setup-git-user@v1
+      - uses: actions/checkout@v2
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: yarn
+          
+      - name: Build website
+        working-directory: website
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
 
-    - run: yarn install
-    
-    - run: |
-        GIT_USER=github-actions[bot] DEPLOYMENT_BRANCH=gh-pages yarn deploy
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.COMMIT_TOKEN }}
+          publish_dir: ./build
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
