@@ -24,17 +24,17 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs',
+          to: 'docs/',
           position: 'left',
           label: 'Docs',
         },
         {
-          to: 'projects',
+          to: 'projects/',
           position: 'left',
           label: 'Projects',
         },
         {
-          to: 'blog',
+          to: 'blog/',
           position: 'left',
           label: 'Blog',
         },
@@ -44,7 +44,7 @@ module.exports = {
           label: 'YouTube',
         },
         {
-          to: 'sponsors',
+          to: 'sponsors/',
           position: 'left',
           label: 'Sponsors',
         },
