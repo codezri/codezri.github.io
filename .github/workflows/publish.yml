@@ -5,8 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  deokiy:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +15,12 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 16.x
+        cache: yarn
         
+    - name: Setup GIT user
+      uses: fregante/setup-git-user@v1
+
     - run: yarn install
+    
     - run: |
-        GIT_USER=${{github.actor}} DEPLOYMENT_BRANCH=gh-pages yarn deploy
+        GIT_USER=github-actions[bot] DEPLOYMENT_BRANCH=gh-pages yarn deploy
