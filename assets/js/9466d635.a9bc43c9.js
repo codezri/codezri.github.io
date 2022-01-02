@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{88:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Neutralinojs 2022 Roadmap","permalink":"/blog/neutralinojs-2022-roadmap"}]}')}}]);
