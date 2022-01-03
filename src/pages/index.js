@@ -44,8 +44,8 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg margin-left--sm"
-            href="https://forms.gle/mTxB9gdKsdWPkwBQA">
-            Say Hello
+            href="https://discord.gg/92UadNvnfh">
+            Join Discord
           </Link>
         </div>
       </div>
