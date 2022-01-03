@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[29],{101:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"How We Save Our Time with\xa0DevOps","permalink":"/blog/how-we-save-our-time-with-devops"},{"title":"Neutralinojs 2022 Roadmap","permalink":"/blog/neutralinojs-2022-roadmap"}]}')}}]);

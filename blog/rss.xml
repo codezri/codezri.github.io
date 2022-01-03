@@ -4,9 +4,16 @@
         <title>CodeZri Blog</title>
         <link>https://codezri.org/blog</link>
         <description>CodeZri Blog</description>
-        <lastBuildDate>Mon, 27 Dec 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[How We Save Our Time with DevOps]]></title>
+            <link>https://codezri.org/blog/how-we-save-our-time-with-devops</link>
+            <guid>how-we-save-our-time-with-devops</guid>
+            <pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Earlier, the software development lifecycle was simple&mdash;we didn't have automated feature delivery,]]></description>
+        </item>
         <item>
             <title><![CDATA[Neutralinojs 2022 Roadmap]]></title>
             <link>https://codezri.org/blog/neutralinojs-2022-roadmap</link>
