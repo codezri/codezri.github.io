@@ -100,6 +100,10 @@ module.exports = {
               href: 'https://www.twitter.com/codezri',
             },
             {
+              label: 'Discord',
+              href: 'https://discord.gg/92UadNvnfh',
+            },
+            {
               label: 'Facebook',
               href: 'https://www.fb.com/codezri',
             }
