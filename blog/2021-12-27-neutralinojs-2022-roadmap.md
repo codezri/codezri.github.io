@@ -3,8 +3,10 @@ title: Neutralinojs 2022 Roadmap
 authors: [shalithasuranga]
 slug: neutralinojs-2022-roadmap
 tags: [neutralinojs, javascript, framework, roadmap]
-image: https://codezri.org/img/projects/neutralinojs.png
+image: media/cover-neutralinojs-roadmap-2022.png
 ---
+
+![](media/cover-neutralinojs-roadmap-2022.png)
 
 Every year, we typically publish a high-level view of planned milestones.
 We wrote the ["Neutralinojs roadmap 2021"](https://factsoverflow.com/neutralinojs-2021-roadmap/)
