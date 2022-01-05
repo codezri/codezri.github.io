@@ -38,14 +38,21 @@ ReleaseZri generates release notes and embeds to a template. Now add your templa
 
 ```
 ## What's new
+
 {RZ_CHANGELOG}
+
 Get started with {RZ_VERSION}: https://codezri.org/docs/releasezri
 ```
 
 ### Supported template variables
 
-- `RZ_VERSION`: New version, Eg: `v3.2.0`.
+- `RZ_VERSION`: New version number, Eg: `3.2.0`. This doesn't contain `v`, so if you need `v` prefix, you
+have to use `v` before this template variable.
 - `RZ_CHANGELOG`: Generated release notes markdown. Release notes is extracted from your `CHANGELOG.md`.
+- `RZ_RZVERSION`: ReleaseZri script version.
+- `RZ_DATE`: System date in `yyyy-mm-dd` format.
+- `RZ_TIME`: System time in `hh:mm:ss` format.
+
 
 ## Add the release note generation script
 
@@ -98,3 +105,6 @@ See a complete workflow
 [here](https://github.com/neutralinojs/neutralinojs/blob/main/.github/workflows/create_release.yml).
 The ReleaseZri project itself maintains release notes with ReleaseZri.
 See its workflow [here](https://github.com/codezri/releasezri/blob/main/.github/workflows/create-release.yml).
+
+If you need to learn more about DevOps practices and why we built ReleaseZri you can read
+[this](https://codezri.org/blog/how-we-save-our-time-with-devops) article.
