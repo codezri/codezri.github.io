@@ -22,7 +22,8 @@ const DonatorsList = ['Just Epic',
         'Brian McGonagill',
         'Brian',
         'Mortarwork Studios',
-        'Louis Couture'];
+        'Louis Couture'
+        'Satya Sinha'];
 
 function Sponsor({sponsor}) {
   return (
