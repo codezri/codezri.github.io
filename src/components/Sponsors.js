@@ -26,7 +26,7 @@ const ProjectsList = [
         Neutralinojs-windows development.
       </>
     ),
-    link: 'https://www.macstadium.com'
+    link: 'https://azure.microsoft.com'
   }
 ];
 
