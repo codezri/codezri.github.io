@@ -36,7 +36,8 @@ const DonatorsList = ['Just Epic',
         'Mortarwork Studios',
         'Louis Couture',
         'Satya Sinha',
-        'Zizaco Zizuini'];
+        'Zizaco Zizuini',
+        'Nchinda'];
 
 function Sponsor({sponsor}) {
   return (
