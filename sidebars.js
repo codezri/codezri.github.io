@@ -15,5 +15,14 @@ module.exports = {
         'releasezri/integrate'
       ],
     },
+    {
+      type: 'category',
+      label: 'BuildZri',
+      items: [
+        'buildzri/intro',
+        'buildzri/integrate',
+        'buildzri/reference'
+      ],
+    },
   ],
 };

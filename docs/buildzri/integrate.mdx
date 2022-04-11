@@ -1,0 +1,90 @@
+---
+title: How to Use
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Add BuildZri to your C++ project with the following steps.
+
+## Add the BuildZri script
+
+BuildZri comes as a Python v3 script that you can execute on GNU/Linux, macOS, and Windows. Copy-paste
+[`scripts/bz.py`](https://github.com/codezri/buildzri/blob/main/scripts/bz.py) into your `scripts` directory.
+Next, add required execution permissions on Unix or Unix-like platforms.
+
+## Create the configuration file
+
+Create the `buildzri.config.json` file for your project according to the [reference](./reference.md). Look at
+the following minimal C++ project.
+
+<Tabs
+  defaultValue="buildzri.config.json"
+  values={[
+    {label: 'buildzri.config.json', value: 'buildzri.config.json'},
+    {label: 'main.cpp', value: 'main.cpp'}
+  ]}>
+  <TabItem value="buildzri.config.json">
+
+  ```json
+{
+    "std": "c++17",
+    "name": "BuildZri Sample",
+    "version": "1.0.1",
+    "output": "./bin/bzsample-${BZ_OS}_${BZ_ARCH}",
+    "source": {
+        "*": [
+            "main.cpp"
+        ],
+    },
+    "definitions": {
+        "*": [
+            "BZ_PROJ_VERSION=\\\"${BZ_VERSION}\\\""
+        ]
+    }
+}
+  ```
+
+  </TabItem>
+  <TabItem value="main.cpp">
+
+  ```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Hello BuildZri" << endl;
+    #if defined(BZ_PROJ_VERSION)
+        cout << "v" << BZ_PROJ_VERSION << endl;
+    #endif
+}
+  ```
+
+  </TabItem>
+</Tabs>
+
+The above project consists of one C++ source file, but you can add multiple source files easily with the
+wildcard syntax. As show above, you can configure BuildZri to automatically set version details via a macro
+definition.
+
+Inspect the build configuration file of the [Neutralinojs](https://github.com/neutralinojs/neutralinojs/blob/main/buildzri.config.json)
+framework to learn how to integrate BuildZri for medium-scale projects.
+
+## Start building binaries
+
+After configuring your project, run the `bz.py` script file to start the compilation process. For example,
+on Unix or Unix-like platforms, you can use the following command:
+
+```bash
+./scripts/bz.py
+```
+The compilation warnings and error messages will appear on the terminal as usual. Also, you can use the `--verbose`
+flag to identify pre-compilation issues. The BuildZri tool is built for both developers and CI/CD environments,
+so you can use the same build command on GitHub Actions, as shown below:
+
+```yaml
+- name: Build
+  run: ./scripts/bz.py
+```
+

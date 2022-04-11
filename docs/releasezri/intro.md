@@ -1,7 +1,16 @@
 ---
-title: Introduction
+title: ReleaseZri Introduction
 ---
-Meaningful and minimalist release notes for developers
+
+```
+    ____       __                  _____        _
+   / __ \___  / /__  ____ ________/__  /  _____(_)
+  / /_/ / _ \/ / _ \/ __ `/ ___/ _ \/ /  / ___/ /
+ / _, _/  __/ /  __/ /_/ (__  )  __/ /__/ /  / /
+/_/ |_|\___/_/\___/\__,_/____/\___/____/_/  /_/
+
+ReleaseZri - Meaningful and minimalist release notes for developers
+```
 
 Managing manual release notes is hard. Therefore, everyone tends to generate release notes
 from commit messages. But, you won't get a meaningful release note at the end. ReleaseZri offers

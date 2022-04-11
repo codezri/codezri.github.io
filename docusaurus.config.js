@@ -49,6 +49,11 @@ module.exports = {
           label: 'Sponsors',
         },
         {
+          to: 'foundation/',
+          position: 'left',
+          label: 'Foundation',
+        },
+        {
           href: 'https://github.com/codezri',
           label: 'GitHub',
           position: 'right',
