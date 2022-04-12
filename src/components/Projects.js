@@ -38,6 +38,17 @@ const ProjectsList = [
     ),
     link: 'https://github.com/codezri/releasezri'
   },
+  {
+    title: 'BuildZri',
+    image: 'script.png',
+    description: (
+      <>
+      BuildZri is a minimal cross-platform C++ build automation tool written in Python. It comes with a simple
+      JSON-based configuration file with the features you need.
+      </>
+    ),
+    link: 'https://github.com/codezri/buildzri'
+  },
    {
     title: 'GoogleZri',
     image: 'script.png',
