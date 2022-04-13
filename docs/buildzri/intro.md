@@ -22,6 +22,8 @@ JSON-based configuration file with the features you need. It provides a minimal 
 standard compiler command-line interface, so you can integrate BuildZri in seconds while having the freedom
 to configure the compiler.
 
+[Source code](https://github.com/codezri/buildzri)
+
 ## Features
 
 - Minimal JSON-based configuration with global variables
