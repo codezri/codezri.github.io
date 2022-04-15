@@ -3,7 +3,7 @@ const path = require('path');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'CodeZri',
-  tagline: 'Open-source tools and content for developers',
+  tagline: 'Open-source tools and educational content for developers',
   url: 'https://codezri.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
