@@ -118,6 +118,10 @@ module.exports = {
               href: 'https://forms.gle/mTxB9gdKsdWPkwBQA',
             },
             {
+              label: 'Design guide',
+              href: 'https://github.com/codezri/design-guide'
+            },
+            {
               label: 'Privacy policy',
               to: 'privacy-policy',
             },
