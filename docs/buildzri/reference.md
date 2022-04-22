@@ -157,6 +157,24 @@ Python code snippet.
 
 Shortname of the `BZ_ARCHL` value. i.e.,: This variable will return `x64` instead of `amd64` or `x86_64`.
 
+### `BZ_COMMIT`
+
+The latest commit hash of the Git repository. This value is extracted by using the following Git command via
+the Python script:
+
+```bash
+git log -n 1 main --pretty=format:"%H"
+```
+
+Example usage:
+
+```json
+"definitions": {
+    "*": [
+        "PROGRAM_COMMIT=\\\"${BZ_COMMIT}\\\""
+    ],
+```
+
 ## Cross-platform definitions
 
 BuildZri is a cross-platform C/C++ build tool, so how to define configuration values for each operating system?
