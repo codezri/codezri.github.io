@@ -30,14 +30,18 @@ const ProjectsList = [
   }
 ];
 
-const DonatorsList = ['Just Epic',
+const currentDonators = ['Just Epic',
         'Brian McGonagill',
         'Brian',
-        'Mortarwork Studios',
-        'Louis Couture',
         'Satya Sinha',
         'Zizaco Zizuini',
         'Nchinda'];
+
+const pastDonators = [
+        'Jeremiah',
+        'Louis Couture',
+        'BenStigsen',
+        'Jarred'];
 
 function Sponsor({sponsor}) {
   return (
@@ -75,9 +79,18 @@ export default function Sponsors() {
           ))}
         </div>
         <h1 className="margin-top--lg">Monthly Donators</h1>
+        <h2>Current</h2>
         <div className="row">
           <ul>
-            {DonatorsList.map((props, idx) => (
+            {currentDonators.map((props, idx) => (
+              <Donator key={idx} name={props} />
+            ))}
+          </ul>
+        </div>
+        <h2>Past</h2>
+        <div className="row">
+          <ul>
+            {pastDonators.map((props, idx) => (
               <Donator key={idx} name={props} />
             ))}
           </ul>
