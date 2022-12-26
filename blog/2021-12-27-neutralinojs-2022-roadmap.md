@@ -9,7 +9,7 @@ image: media/cover-neutralinojs-roadmap-2022.png
 ![](media/cover-neutralinojs-roadmap-2022.png)
 
 Every year, we typically publish a high-level view of planned milestones.
-We wrote the ["Neutralinojs roadmap 2021"](https://factsoverflow.com/neutralinojs-2021-roadmap/)
+We wrote the ["Neutralinojs roadmap 2021"](https://web.archive.org/web/20220618124802/https://factsoverflow.com/neutralinojs-2021-roadmap/)
 article covering milestones for the year 2021.
 The year 2021 roadmap focused on building an error code system, synchronizing features among
 supported platforms, completing pending feature requests, and refactoring the main codebase with a
