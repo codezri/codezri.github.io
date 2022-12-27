@@ -36,7 +36,7 @@ tool for compiling the Neutralinojs C++ codebase
 - Improved the codebase quality and fixed various bugs to make Neutralinojs stable for developing
 production-level apps
 - Mentored one project idea with the Google Summer of Code (GSoC) 2022 program
-- Added partial ESM (ECMA Script Modules) support (Now, developers
+- Added partial ESM (ECMAScript Modules) support (Now, developers
 [can](https://github.com/neutralinojs/neutralino.js/issues/58#issuecomment-1353276382) load the Neutralinojs
 client as an ES module)
 
@@ -62,7 +62,7 @@ in the community in 2023!
 
 ## Transparency
 
-Neutralinojs is a free and pure open-source project - you can use it for free, inspect the source, and
+Neutralinojs is a free and pure open-source project &mdash;you can use it for free, inspect the source, and
 customize it if you want. It doesn't come with premium features that are unlockable via monetary payments.
 Every framework user gets the same set of features. Also, we don't embed telemetry services in the framework
 core or developer tools for generating usage statistics. Our primary goal is to offer a better lightweight,
@@ -101,7 +101,8 @@ Here are some crucial goals planned for 2023:
 - Offer a native network request API to overcome the CORS issue that needs turning off webview
 security layers
 - Enable multi-threaded native API calls and improve the framework performance further
-- Release the Neutralinojs builder project with [GSoC 2023](https://github.com/neutralinojs/gsoc2023)
+- Release the [Neutralinojs builder](https://github.com/neutralinojs-community/neutralinojs-builder) 
+project with [GSoC 2023](https://github.com/neutralinojs/gsoc2023)
 - Fix the window positioning issue on the Windows platform by refactoring the existing webview library version
 - Add the Unicode support for the Windows framework version
 - Delivering features requested by the developer community
@@ -119,5 +120,5 @@ if you like to list your app on the [Neutralinojs apps page](https://neutralino.
 
 Thanks for reading.
 
-Build an app with Neutralinojs - feel the difference - and join with our journey.
+Build an app with Neutralinojs &mdash; feel the difference &mdash; and join with our journey.
 
