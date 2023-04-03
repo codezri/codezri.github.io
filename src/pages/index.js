@@ -64,8 +64,8 @@ function HomePageIntro() {
           </div>
           <div className="col col--6">
             <p>
-              CodeZri (a non-profit organization) is making open-source products and high-quality content for developers around the world.
-              We built popular free and open-source products including Neutralinojs and Jerverless.
+              CodeZri (a non-profit organization) builds open-source products and high-quality educational content for developers around the world.
+              We built popular free and open-source products including Neutralinojs, BuildZri, ReleaseZri, and Jerverless.
               We often publish coding tutorials and technical articles.
             </p>
           </div>
@@ -80,8 +80,8 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.tagline}`}
-      description="CodeZri (a non-profit organization) is making open-source products and
-      high-quality content for developers around the world">
+      description="CodeZri (a non-profit organization) builds open-source products and
+      high-quality educational content for developers">
       <HomepageHeader />
       <HomePageIntro />
       <main>
