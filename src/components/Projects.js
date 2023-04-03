@@ -17,7 +17,7 @@ const ProjectsList = [
     link: 'https://neutralino.js.org'
   },
   {
-    title: 'Jerverless',
+    title: <span>Jerverless <span className="badge badge--secondary">Archived</span></span>,
     image: 'jerverless.png',
     description: (
       <>
@@ -81,18 +81,6 @@ const ProjectsList = [
       </>
     ),
     link: 'https://github.com/codezri/lamgstack'
-  },
-  {
-    title: 'FactsOverflow',
-    image: 'factsoverflow.png',
-    description: (
-      <>
-        FactsOverflow (also known as FO) is an educational non-commercial blog that publishes stories mostly about computer
-        science and programming. This website contains articles written by volunteers who need to show their findings,
-        experiments, and open-source-related activities to the right community.
-      </>
-    ),
-    link: 'https://factsoverflow.com/'
   },
   {
     title: 'react-native-ecommerce',
