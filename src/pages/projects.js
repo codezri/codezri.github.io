@@ -28,15 +28,17 @@ export default function Home() {
       <ProjectsHeader />
       <main>
         <Projects />
-        <div className="row">
-            <div className="col col--12">
-              <Adsense
-                client='ca-pub-4805219819571962'
-                slot='1174653824'
-                style={{ display: 'block' }}
-                layout='in-article'
-                format='auto'
-              />
+        <div className="container">
+            <div className="row">
+                <div className="col col--12">
+                <Adsense
+                    client='ca-pub-4805219819571962'
+                    slot='1174653824'
+                    style={{ display: 'block' }}
+                    layout='in-article'
+                    format='auto'
+                />
+                </div>
             </div>
         </div>
       </main>
