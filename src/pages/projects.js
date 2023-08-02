@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {Adsense} from '@ctrl/react-adsense';
 import styles from './index.module.css';
 import Projects from '../components/Projects';
 
@@ -27,6 +28,17 @@ export default function Home() {
       <ProjectsHeader />
       <main>
         <Projects />
+        <div className="row">
+            <div className="col col--12">
+              <Adsense
+                client='ca-pub-4805219819571962'
+                slot='1174653824'
+                style={{ display: 'block' }}
+                layout='in-article'
+                format='auto'
+              />
+            </div>
+        </div>
       </main>
     </Layout>
   );
