@@ -11,6 +11,12 @@ module.exports = {
   favicon: 'img/favicon.jpg',
   organizationName: 'codezri',
   projectName: 'codezri.github.io',
+  scripts: [
+    {
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+      async: true
+    }
+  ],
   themeConfig: {
     gtag: {
       trackingID: 'UA-160712034-1',
