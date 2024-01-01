@@ -30,7 +30,8 @@ Core maintainers and the friendly community accomplished the following achieveme
 - Extended native window features by adding window startup positioning and persistent window state
 - Added a way to extend the default user agent string within the window mode
 - Implemented multiple development/production config files support with a new command-line option
-- The neu CLI program now has better, productive frontend library support with automatic command invocations,
+- Improved the neu CLI program with better, productive frontend library support by
+invoking frontend library commands automatically,
 i.e., running the frontend library's development server automatically with `neu run`
 - Stabilized and improved the framework by improving the codebase, enhancing existing stable
 APIs, and fixing bugs reported by the developer community
