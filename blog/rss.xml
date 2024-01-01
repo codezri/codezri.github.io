@@ -4,9 +4,16 @@
         <title>CodeZri Blog</title>
         <link>https://codezri.org/blog</link>
         <description>CodeZri Blog</description>
-        <lastBuildDate>Tue, 27 Dec 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Neutralinojs 2024 Roadmap]]></title>
+            <link>https://codezri.org/blog/neutralinojs-2024-roadmap</link>
+            <guid>neutralinojs-2024-roadmap</guid>
+            <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[At the end of every year, we typically publish a new blog post about the annual achievements and plans]]></description>
+        </item>
         <item>
             <title><![CDATA[Neutralinojs 2023 Roadmap]]></title>
             <link>https://codezri.org/blog/neutralinojs-2023-roadmap</link>
