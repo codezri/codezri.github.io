@@ -41,7 +41,7 @@ APIs, and fixing bugs reported by the developer community
 In 2021, our goal was to stabilize the framework to help the community build production-level apps.
 In 2022, stable features, API enhancements, security improvements, and DevOps implementations made
 Neutralinojs a high-quality, production-grade solution for all cross-platform desktop app developers.
-Now, most medium-sized companies, startups, freelancers, and individual developers choose Neutralinojs
+Now, medium-sized companies, startups, freelancers, and individual developers choose Neutralinojs
 over other popular frameworks due to its simplicity, lightweightedness, productivity, and active community support. 
 
 We'll keep adding developer-focused productivity features, app development features, and
