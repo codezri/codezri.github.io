@@ -76,7 +76,8 @@ MacStadium offered us a free Mac mini instance, and Microsoft offered us free Az
 credits to run a Windows 10 virtual machine. Unfortunately, our Azure sponsorship ended in 2023,
 but we'll apply for the sponsorship program again.
 
-Seven paid members support the Neutralinojs author via Patreon to allocate more time for
+Seven paid members support the Neutralinojs author via [Patreon](https://www.patreon.com/shalithasuranga)
+to allocate more time for
 the project maintenance-related tasks. We appreciate every donator's support and hope you'll be with us during this year.
 
 As mentioned in [this article](https://neutralino.js.org/docs/contributing/about-neutralinojs#financial-perspective)
