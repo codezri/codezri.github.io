@@ -16,18 +16,18 @@ const ProjectsList = [
     ),
     link: 'https://www.macstadium.com'
   },
-  {
-    name: 'Microsoft Azure',
-    image: 'azure.jpg',
-    description: (
-      <>
-        Microsoft Azure is a managed cloud computing service for various
-        cloud computing requirements. They offered us free platform credits for
-        Neutralinojs-windows development.
-      </>
-    ),
-    link: 'https://azure.microsoft.com'
-  }
+  // {
+  //   name: 'Microsoft Azure',
+  //   image: 'azure.jpg',
+  //   description: (
+  //     <>
+  //       Microsoft Azure is a managed cloud computing service for various
+  //       cloud computing requirements. They offered us free platform credits for
+  //       Neutralinojs-windows development.
+  //     </>
+  //   ),
+  //   link: 'https://azure.microsoft.com'
+  // }
 ];
 
 const currentDonators = ['Just Epic',
