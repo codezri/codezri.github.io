@@ -32,18 +32,17 @@ const ProjectsList = [
 
 const currentDonators = ['Just Epic',
         'Brian McGonagill',
-        'Brian',
         'Satya Sinha',
         'Zizaco Zizuini',
         'Nchinda',
-        'Varun Suryawanshi',
-        'Thomas Sham'];
+        'Tom S'];
 
 const pastDonators = [
         'Jeremiah',
         'Louis Couture',
         'BenStigsen',
-        'Jarred'];
+        'Jarred',
+        'Varun Suryawanshi'];
 
 function Sponsor({sponsor}) {
   return (
