@@ -18,7 +18,7 @@ function ProfileHeader() {
           <Link
             className="button button--secondary button--lg"
             href="https://www.linkedin.com/in/shalithasuranga/">
-            LinkedIn
+            Connect on LinkedIn
           </Link>
           <Link
             className="button button--secondary button--lg margin-left--sm"
@@ -42,16 +42,16 @@ function ProfileIntro() {
           <div className="col col--9">
             <p>
               I wrote "hello world" when I was thirteen years old.
-              I like to work with computer science related stuff. I started CodeZri
+              I like to work with computer-science-based engineering projects. I started CodeZri
               to build open-source tools and write high-quality technical content for developers around the world.
 
               <br/><br/>
-              Find me on,
+              My online profiles:
               <br/><br/>
               <li>
                 <Link
                   href="https://github.com/shalithasuranga">
-                  Github
+                  GitHub
                 </Link>
               </li>
               <li>
@@ -80,8 +80,8 @@ function ProfileIntro() {
               </li>
               <li>
                 <Link
-                  href="https://www.twitter.com/ShalithaSuranga">
-                  Twitter
+                  href="https://www.x.com/ShalithaSuranga">
+                  X
                 </Link>
               </li>
               <li>
@@ -111,7 +111,8 @@ function ProfileIntro() {
               <br/>
 
               If you would like to know more about me,
-              click <Link href="https://www.google.com/search?q=Shalitha+Suranga">here!</Link>
+              click <Link href="https://www.google.com/search?q=Shalitha+Suranga">here!</Link>.
+              You can contact me by filling <Link href="https://forms.gle/mTxB9gdKsdWPkwBQA">this Google form</Link>.
             </p>
           </div>
         </div>
@@ -126,7 +127,7 @@ export default function Home() {
     <Layout
       title={`Shalitha Suranga`}
       description="Shalitha Suranga is a programmer and technical writer. He founded CodeZri
-                    non-profit organization to develop tools for developers.">
+                    non-profit organization to develop tools and compose technical content for developers.">
       <ProfileHeader />
       <main>
           <ProfileIntro />

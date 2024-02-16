@@ -45,11 +45,6 @@ module.exports = {
           label: 'Blog',
         },
         {
-          href: 'https://www.youtube.com/c/CodeZri',
-          position: 'left',
-          label: 'YouTube',
-        },
-        {
           to: 'sponsors/',
           position: 'left',
           label: 'Sponsors',
@@ -58,6 +53,16 @@ module.exports = {
           to: 'foundation/',
           position: 'left',
           label: 'Foundation',
+        },
+        {
+          to: 'shalithasuranga/',
+          position: 'left',
+          label: 'Founder',
+        },
+        {
+          href: 'https://www.youtube.com/c/CodeZri',
+          position: 'right',
+          label: 'YouTube',
         },
         {
           href: 'https://github.com/codezri',
@@ -107,8 +112,8 @@ module.exports = {
               href: 'https://www.linkedin.com/company/codezri',
             },
             {
-              label: 'Twitter',
-              href: 'https://www.twitter.com/codezri',
+              label: 'X',
+              href: 'https://www.x.com/codezri',
             },
             {
               label: 'Discord',
