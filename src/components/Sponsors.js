@@ -81,6 +81,9 @@ export default function Sponsors() {
           ))}
         </div>
         <h1 className="margin-top--lg">Monthly Donators</h1>
+        <p>The following sponsors financially support the founder of the 
+          CodeZri organization via <Link href="https://www.patreon.com/shalithasuranga">Patreon</Link> 
+            and <Link href="https://github.com/sponsors/shalithasuranga">GitHub Sponsors</Link> platforms.</p>
         <h2>Current</h2>
         <div className="row">
           <ul>
