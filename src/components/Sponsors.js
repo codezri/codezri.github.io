@@ -35,7 +35,8 @@ const currentDonators = ['Just Epic',
         'Satya Sinha',
         'Zizaco Zizuini',
         'Nchinda',
-        'Tom S'];
+        'Tom S',
+        'LiamGaudy'];
 
 const pastDonators = [
         'Jeremiah',
