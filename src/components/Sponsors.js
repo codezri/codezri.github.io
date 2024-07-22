@@ -16,18 +16,17 @@ const ProjectsList = [
     ),
     link: 'https://www.macstadium.com'
   },
-  // {
-  //   name: 'Microsoft Azure',
-  //   image: 'azure.jpg',
-  //   description: (
-  //     <>
-  //       Microsoft Azure is a managed cloud computing service for various
-  //       cloud computing requirements. They offered us free platform credits for
-  //       Neutralinojs-windows development.
-  //     </>
-  //   ),
-  //   link: 'https://azure.microsoft.com'
-  // }
+  {
+    name: 'Harald Schneider Software',
+    image: 'marketmix.png',
+    description: (
+      <>
+        Harald Schneider Software & Mediadesign is a software product development company that offers desktop, 
+        mobile, and web app engineering services. They offered us a free Windows VM for Neutralinojs Windows development.
+      </>
+    ),
+    link: 'https://marketmix.com'
+  },
 ];
 
 const currentDonators = ['Just Epic',
