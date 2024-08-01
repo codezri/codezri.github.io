@@ -94,6 +94,16 @@ const ProjectsList = [
     ),
     link: 'https://github.com/codezri/react-native-ecommerce'
   },
+  {
+    title: 'PhotoZri',
+    image: 'photozri.png',
+    description: (
+      <>
+        PhotoZri is a minimal image editor app that offers basic image editing features.
+      </>
+    ),
+    link: 'https://codezri.org/photozri'
+  },
 ];
 
 function Project({project}) {
