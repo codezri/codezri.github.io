@@ -108,7 +108,7 @@ export default function Sponsors() {
         </div>
        <h1 className="margin-top--lg">One-Time Donators</h1>
         <p>The following sponsors financially supported the founder of the CodeZri 
-          organization via Patreon or another payment channel with a one-time donation.</p>
+          organization via Patreon, Github Sponsors, or another donation/payment channel with a one-time monetary donation.</p>
         <div className="row">
           <ul>
             {oneTimeDonators.map((props, idx) => (
