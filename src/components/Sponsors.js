@@ -44,6 +44,10 @@ const pastDonators = [
         'Jarred',
         'Varun Suryawanshi'];
 
+const oneTimeDonators = [
+        'Paolo Caminiti',
+        ['BayLanka', 'https://baylanka.net']];
+
 function Sponsor({sponsor}) {
   return (
     <div className={clsx('col col--4', styles.sponsor, 'padding-vert--md')}>
@@ -63,9 +67,11 @@ function Sponsor({sponsor}) {
   );
 }
 
-function Donator(props) {
+function Donator({info}) {
   return (
-    <li>{props.name}</li>
+    Array.isArray(info) ? 
+    <li><Link href={info[1]}>{info[0]}</Link></li> : 
+    <li>{info}</li>
   );
 }
 
@@ -88,7 +94,7 @@ export default function Sponsors() {
         <div className="row">
           <ul>
             {currentDonators.map((props, idx) => (
-              <Donator key={idx} name={props} />
+              <Donator key={idx} info={props} />
             ))}
           </ul>
         </div>
@@ -96,7 +102,17 @@ export default function Sponsors() {
         <div className="row">
           <ul>
             {pastDonators.map((props, idx) => (
-              <Donator key={idx} name={props} />
+              <Donator key={idx} info={props} />
+            ))}
+          </ul>
+        </div>
+       <h1 className="margin-top--lg">One-Time Donators</h1>
+        <p>The following sponsors financially supported the founder of the CodeZri 
+          organization via Patreon or another payment channel with a one-time donation.</p>
+        <div className="row">
+          <ul>
+            {oneTimeDonators.map((props, idx) => (
+              <Donator key={idx} info={props} />
             ))}
           </ul>
         </div>
