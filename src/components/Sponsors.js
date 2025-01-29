@@ -28,15 +28,16 @@ const ProjectsList = [
     link: 'https://marketmix.com'
   },
   {
-    name: 'ComigoGames',
+    name: 'Ct.js Game Engine',
     image: 'comigo.png',
     description: (
       <>
-        The ComigoGames game development company built a fully-featured 2D game engine and many popular online games. They actively supports Neutralinojs
-        development with code contributions/ideas and monetary donations.
+          Ct.js is an open-source game engine based on Neutralino.js framework. It allows its developers to make 2D games 
+          of any genre — with desktop builds using Neutralino, too! Ct.js' maintainer CoMiGo supports Neutralino.js development 
+          directly with code contributions/ideas and monetary donations.
       </>
     ),
-    link: 'https://comigo.games'
+    link: 'https://ctjs.rocks'
   },
 ];
 
