@@ -27,6 +27,17 @@ const ProjectsList = [
     ),
     link: 'https://marketmix.com'
   },
+  {
+    name: 'ComigoGames',
+    image: 'comigo.png',
+    description: (
+      <>
+        The ComigoGames game development company built a fully-featured 2D game engine and many popular online games. They actively supports Neutralinojs
+        development with code contributions/ideas and monetary donations.
+      </>
+    ),
+    link: 'https://comigo.games'
+  },
 ];
 
 const currentDonators = ['Just Epic',
