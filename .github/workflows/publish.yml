@@ -18,6 +18,7 @@ jobs:
           
       - name: Build website
         run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
           yarn install --frozen-lockfile
           yarn build
 
