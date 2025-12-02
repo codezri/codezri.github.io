@@ -43,20 +43,22 @@ const ProjectsList = [
 
 const currentDonators = ['Just Epic',
         'Brian McGonagill',
-        'Satya Sinha',
-        'Zizaco Zizuini',
         'Nchinda',
         'Tom S',
         'LiamGaudy',
         'CrystalMoon',
-        'Paweł Kołataj'];
+        'Paweł Kołataj',
+        'Vi Hongg'];
 
 const pastDonators = [
         'Jeremiah',
         'Louis Couture',
         'BenStigsen',
         'Jarred',
-        'Varun Suryawanshi'];
+        'Varun Suryawanshi',
+        'Satya Sinha',
+        'Zizaco Zizuini',
+        'CoMiGo Games'];
 
 const oneTimeDonators = [
         'Paolo Caminiti',
