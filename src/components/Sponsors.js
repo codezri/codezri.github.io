@@ -63,7 +63,8 @@ const pastDonators = [
 const oneTimeDonators = [
         'Paolo Caminiti',
         ['BayLanka', 'https://baylanka.net'],
-        'Pasindu Kavinda'];
+        'Pasindu Kavinda',
+        'Anthony'];
 
 function Sponsor({sponsor}) {
   return (
