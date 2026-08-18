@@ -95,16 +95,31 @@ depending on whether the `Unreleased` section in `CHANGELOG.md` has content.
     exit 1
 ```
 
-Add another step to commit and push changelog's updates.
+Send a pull request with the changelog updates. We no longer commit directly to the default branch —
+instead, a dedicated branch is created and a pull request is opened, so the change can be reviewed
+before merging.
 
 ```yaml
-- name: Commit and Push Changelog
-  uses: EndBug/add-and-commit@v7.4.0
-  with:
-    default_author: github_actions
-    message: 'Update changelog for v${{github.event.inputs.version}}'
-    add: 'CHANGELOG.md'
-    tag: v${{github.event.inputs.version}}
+- name: Send a pull request for the modified changelog
+  if: ${{ env.VERSION != 'nightly' }}
+  run: |
+    branch=changelog-update-$VERSION_WITH_V
+
+    git checkout -b $branch
+    git add CHANGELOG.md
+
+    git config user.name "github-actions[bot]"
+    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+    git commit -m "Update changelog for $VERSION_WITH_V"
+    git push origin $branch
+
+    gh pr create \
+      --title "Update changelog after $VERSION_WITH_V release" \
+      --body "This pull request updates CHANGELOG.md file after the recent release." \
+      --assignee "${{ github.actor }}"
+  env:
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 Finally, publish your release with notes and artifacts.
