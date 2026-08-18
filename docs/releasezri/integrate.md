@@ -53,7 +53,6 @@ have to use `v` before this template variable.
 - `RZ_DATE`: System date in `yyyy-mm-dd` format.
 - `RZ_TIME`: System time in `hh:mm:ss` format.
 
-
 ## Add the release note generation script
 
 Copy-paste [`scripts/rz.py`](https://github.com/codezri/releasezri/blob/main/scripts/rz.py) into your project.
@@ -76,29 +75,63 @@ Add a workflow step to create release notes.
     ./scripts/rz.py create ${{github.event.inputs.version}}
 ```
 
-Add another step to commit and push changelog's updates.
+## Check for unreleased changes (optional)
+
+Before creating a release, you may want to confirm there are actually unreleased changes to avoid
+publishing an empty release. Run `rz.py check`, which prints `ST_HAS_CHANGES` or `ST_NO_CHANGES`
+depending on whether the `Unreleased` section in `CHANGELOG.md` has content.
 
 ```yaml
-- name: Commit and Push Changelog
-  uses: EndBug/add-and-commit@v7.4.0
-  with:
-    default_author: github_actions
-    message: 'Update changelog for v${{github.event.inputs.version}}'
-    add: 'CHANGELOG.md'
-    tag: v${{github.event.inputs.version}}
+- name: Check for unreleased changes
+  id: check
+  run: |
+    chmod +x ./scripts/rz.py
+    echo "status=$(./scripts/rz.py check)" >> $GITHUB_OUTPUT
+
+- name: Stop if no changes
+  if: steps.check.outputs.status == 'ST_NO_CHANGES'
+  run: |
+    echo "No unreleased changes found."
+    exit 1
+```
+
+Send a pull request with the changelog updates. We no longer commit directly to the default branch —
+instead, a dedicated branch is created and a pull request is opened, so the change can be reviewed
+before merging.
+
+```yaml
+- name: Send a pull request for the modified changelog
+  if: ${{ env.VERSION != 'nightly' }}
+  run: |
+    branch=changelog-update-$VERSION_WITH_V
+
+    git checkout -b $branch
+    git add CHANGELOG.md
+
+    git config user.name "github-actions[bot]"
+    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+    git commit -m "Update changelog for $VERSION_WITH_V"
+    git push origin $branch
+
+    gh pr create \
+      --title "Update changelog after $VERSION_WITH_V release" \
+      --body "This pull request updates CHANGELOG.md file after the recent release." \
+      --assignee "${{ github.actor }}"
+  env:
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 Finally, publish your release with notes and artifacts.
 
 ```yaml
 - name: Create a GitHub release
-  uses: ncipollo/release-action@v1
-  with:
-      tag: v${{github.event.inputs.version}}
-      name: Neutralinojs v${{github.event.inputs.version}} released!
-      bodyFile: ./.tmprz/release_notes.md
-      artifacts: './bin/neutralinojs-v${{github.event.inputs.version}}.zip'
-      draft: true
+  run: |
+    gh release create v${{github.event.inputs.version}} \
+      --title "Neutralinojs v${{github.event.inputs.version}} released!" \
+      --notes-file ./.tmprz/release_notes.md
+  env:
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 See a complete workflow
