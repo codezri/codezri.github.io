@@ -6,26 +6,34 @@ on:
 
 jobs:
   deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-      
-      - uses: actions/setup-node@v5
+      - uses: actions/checkout@v6
+  
+      - uses: actions/setup-node@v4
         with:
           node-version: 24.x
           cache: yarn
           
       - name: Build website
         run: |
-          export NODE_OPTIONS=--openssl-legacy-provider
           yarn install --frozen-lockfile
           yarn build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        
+      - name: Upload Pages artifacts
+        uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.COMMIT_TOKEN }}
-          publish_dir: ./build
-          user_name: github-actions[bot]
-          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          path: './build'
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
