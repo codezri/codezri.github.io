@@ -13,12 +13,11 @@ jobs:
       
       - uses: actions/setup-node@v5
         with:
-          node-version: 21.x
+          node-version: 24.x
           cache: yarn
           
       - name: Build website
         run: |
-          export NODE_OPTIONS=--openssl-legacy-provider
           yarn install --frozen-lockfile
           yarn build
 
