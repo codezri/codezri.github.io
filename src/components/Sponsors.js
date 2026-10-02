@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './Sponsors.module.css';
 
-const ProjectsList = [
+const SponsorList = [
   {
     name: 'MacStadium',
     image: 'macstadium.png',
@@ -32,12 +32,35 @@ const ProjectsList = [
     image: 'comigo.png',
     description: (
       <>
-          Ct.js is an open-source game engine based on Neutralino.js framework. It allows its developers to make 2D games 
-          of any genre — with desktop builds using Neutralino, too! Ct.js' maintainer CoMiGo supports Neutralino.js development 
+          Ct.js is an open-source game engine based on Neutralinojs framework. It allows its developers to make 2D games 
+          of any genre — with desktop builds using Neutralinojs, too! Ct.js' maintainer CoMiGo supports Neutralinojs development 
           directly with code contributions/ideas and monetary donations.
       </>
     ),
     link: 'https://ctjs.rocks'
+  },
+  {
+    name: 'BayLanka',
+    image: 'baylanka.png',
+    description: (
+      <>
+         BayLanka, a software engineering company in Sri Lanka, offers software development, mobile app development, UX design, 
+        staff augmentation services. BayLanka provides volunteer Neutralinojs project mentors for GSoC (Google Summer of Code) and makes 
+        monetary donations to Neutralinojs,
+      </>
+    ),
+    link: 'https://baylanka.net'
+  },
+  {
+    name: 'The Alpha Nova',
+    image: 'thealphanova.png',
+    description: (
+      <>
+         The Alpha Nova (also known as TAN), a Canadian technology company, offers AI, software and IoT engineering services 
+        for intelligent products and industrial systems. TAN supports Neutralinojs development with monetary donations.
+      </>
+    ),
+    link: 'https://thealphanova.com'
   },
 ];
 
@@ -47,8 +70,8 @@ const currentDonators = ['Just Epic',
         'Tom S',
         'LiamGaudy',
         'CrystalMoon',
-        'Paweł Kołataj',
-        'Vi Hongg'];
+        'Vi Hongg',
+        'FrostIce482'];
 
 const pastDonators = [
         'Jeremiah',
@@ -58,11 +81,11 @@ const pastDonators = [
         'Varun Suryawanshi',
         'Satya Sinha',
         'Zizaco Zizuini',
-        'CoMiGo Games'];
+        'CoMiGo Games',
+        'Paweł Kołataj'];
 
 const oneTimeDonators = [
         'Paolo Caminiti',
-        ['BayLanka', 'https://baylanka.net'],
         'Pasindu Kavinda',
         'Anthony'];
 
@@ -99,7 +122,7 @@ export default function Sponsors() {
       <div className="container">
         <h1>Sponsors</h1>
         <div className="row">
-          {ProjectsList.map((props, idx) => (
+          {SponsorList.map((props, idx) => (
             <Sponsor key={idx} sponsor={props} />
           ))}
         </div>
