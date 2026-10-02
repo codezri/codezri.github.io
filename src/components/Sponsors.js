@@ -46,7 +46,7 @@ const SponsorList = [
       <>
          BayLanka, a software engineering company in Sri Lanka, offers software development, mobile app development, UX design, 
         staff augmentation services. BayLanka provides volunteer Neutralinojs project mentors for GSoC (Google Summer of Code) and makes 
-        monetary donations to Neutralinojs,
+        monetary donations to Neutralinojs.
       </>
     ),
     link: 'https://baylanka.net'
